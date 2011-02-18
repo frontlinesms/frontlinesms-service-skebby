@@ -1,0 +1,17 @@
+# Excluded files
+
+# The maven "target" directory - a temporary directory used in Maven builds
+target/
+
+# Eclipse files and directories
+bin/
+.classpath
+.project
+.settings/
+.tmp/
+
+# Ignore log files in the root directory
+*.log
+
+# OSX files
+.DS_Store

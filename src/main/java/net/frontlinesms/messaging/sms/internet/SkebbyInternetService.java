@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import org.apache.http.client.ClientProtocolException;
 import org.apache.log4j.Logger;
 import org.smslib.ReceiveNotSupportedException;
 
@@ -18,9 +17,7 @@ import net.frontlinesms.FrontlineUtils;
 import net.frontlinesms.data.domain.FrontlineMessage;
 import net.frontlinesms.data.domain.FrontlineMessage.Status;
 import net.frontlinesms.messaging.Provider;
-import net.frontlinesms.messaging.sms.SmsServiceStatus;
 import net.frontlinesms.messaging.sms.properties.PasswordString;
-import net.frontlinesms.messaging.sms.properties.PhoneSection;
 import net.frontlinesms.ui.SmsInternetServiceSettingsHandler;
 
 /**
@@ -28,7 +25,7 @@ import net.frontlinesms.ui.SmsInternetServiceSettingsHandler;
  * 
  * @author Giancarlo Frison <giancarlo@gfrison.com>
  */
-@Provider(name = "Skebby", icon = "/icons/smsdevice/internet/servizio_skebby.png")
+@Provider(name = "Skebby (beta)", icon = "/icons/smsdevice/internet/servizio_skebby.png")
 public class SkebbyInternetService extends AbstractSmsInternetService {
 
 	
