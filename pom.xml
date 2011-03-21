@@ -9,39 +9,23 @@
 	<name>skebby-frontlinesms</name>
 	<description>Skebby Internet Service - http://www.skebby.com</description>
 	<url>http://skebby.com</url>
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-	<repositories>
-		<repository>
-			<id>frontlinesms.repo</id>
-			<name>FrontlineSMS Maven repository</name>
-			<url>http://dev.frontlinesms.com/m2repo</url>
-		</repository>
-	</repositories>
+	
+	<parent>
+		<groupId>net.frontlinesms.core</groupId>
+		<artifactId>frontlinesms-pom-parent</artifactId>
+		<version>1.7.00-beta-4</version>
+		<relativePath>../pom-parent</relativePath>
+	</parent>
+
 	<organization>
 		<name>Giancarlo Frison</name>
 		<url>http://gfrison.com</url>
 	</organization>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
-				<configuration>
-					<source>1.5</source>
-					<target>1.5</target>
-					<compilerVersion>1.5</compilerVersion>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+
 	<dependencies>
 		<dependency>
 			<groupId>net.frontlinesms.core</groupId>
 			<artifactId>frontlinesms</artifactId>
-			<version>1.7.00-beta-4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
@@ -57,13 +41,6 @@
 			<groupId>commons-lang</groupId>
 			<artifactId>commons-lang</artifactId>
 			<version>2.5</version>
-		</dependency>
-
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
 		</dependency>
 	</dependencies>
 </project>

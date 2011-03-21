@@ -117,7 +117,7 @@ public class SkebbyInternetService extends AbstractSmsInternetService {
 				setStatus(SmsInternetServiceStatus.CONNECTED, null);
 			}
 			
-		} catch (IOException e) {
+		} catch (Exception e) {
 			log.warn("Could not connect Skebby", e);
 			setStatus(SmsInternetServiceStatus.FAILED_TO_CONNECT, e.getMessage());
 			throw new SmsInternetServiceInitialisationException(e);
