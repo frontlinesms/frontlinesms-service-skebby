@@ -1,6 +1,5 @@
 package net.frontlinesms.messaging.sms.internet;
 
-import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
