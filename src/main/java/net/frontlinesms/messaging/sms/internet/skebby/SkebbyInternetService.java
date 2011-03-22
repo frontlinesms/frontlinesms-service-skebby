@@ -1,4 +1,4 @@
-package net.frontlinesms.messaging.sms.internet;
+package net.frontlinesms.messaging.sms.internet.skebby;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -16,6 +16,7 @@ import net.frontlinesms.FrontlineUtils;
 import net.frontlinesms.data.domain.FrontlineMessage;
 import net.frontlinesms.data.domain.FrontlineMessage.Status;
 import net.frontlinesms.messaging.Provider;
+import net.frontlinesms.messaging.sms.internet.*;
 import net.frontlinesms.messaging.sms.properties.PasswordString;
 import net.frontlinesms.ui.SmsInternetServiceSettingsHandler;
 
@@ -173,7 +174,6 @@ public class SkebbyInternetService extends AbstractSmsInternetService {
 
 	@Override
 	protected void receiveSms() throws SmsInternetServiceReceiveException {
-
 	}
 	
 
