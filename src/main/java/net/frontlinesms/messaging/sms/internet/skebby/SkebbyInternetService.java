@@ -18,7 +18,7 @@ import net.frontlinesms.data.domain.FrontlineMessage.Status;
 import net.frontlinesms.messaging.Provider;
 import net.frontlinesms.messaging.sms.internet.*;
 import net.frontlinesms.messaging.sms.properties.PasswordString;
-import net.frontlinesms.ui.SmsInternetServiceSettingsHandler;
+import net.frontlinesms.ui.handler.settings.SmsInternetServiceSettingsHandler;
 
 /**
  * Skebby Internet Service - http://www.skebby.com
