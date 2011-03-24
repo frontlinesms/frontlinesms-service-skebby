@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.skebby.gateways</groupId>
-	<artifactId>skebby-frontlinesms</artifactId>
+	<artifactId>frontlinesms-service-skebby</artifactId>
 	<version>1.0.1-SNAPSHOT</version>
 
 	<name>skebby-frontlinesms</name>
