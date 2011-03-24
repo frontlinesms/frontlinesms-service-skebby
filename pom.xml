@@ -3,7 +3,7 @@
 
 	<groupId>com.skebby.gateways</groupId>
 	<artifactId>frontlinesms-service-skebby</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2-SNAPSHOT</version>
 
 	<name>skebby-frontlinesms</name>
 	<description>Skebby Internet Service - http://www.skebby.com</description>
