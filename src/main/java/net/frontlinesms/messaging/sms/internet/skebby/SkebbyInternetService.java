@@ -1,8 +1,5 @@
 package net.frontlinesms.messaging.sms.internet.skebby;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-
 import org.apache.log4j.Logger;
 import org.smslib.ReceiveNotSupportedException;
 
@@ -13,6 +10,7 @@ import com.skebby.gateways.SendSmsResponse;
 import com.skebby.gateways.SkebbyResult;
 
 import net.frontlinesms.FrontlineUtils;
+import net.frontlinesms.data.StructuredProperties;
 import net.frontlinesms.data.domain.FrontlineMessage;
 import net.frontlinesms.data.domain.FrontlineMessage.Status;
 import net.frontlinesms.messaging.Provider;
@@ -57,8 +55,8 @@ public class SkebbyInternetService extends AbstractSmsInternetService {
 		return null;
 	}
 
-	public Map<String, Object> getPropertiesStructure() {
-		LinkedHashMap<String, Object> defaultSettings = new LinkedHashMap<String, Object>();
+	public StructuredProperties getPropertiesStructure() {
+		StructuredProperties defaultSettings = new StructuredProperties();
 		defaultSettings.put(PROPERTY_USERNAME, "");
 		defaultSettings.put(PROPERTY_PASSWORD, new PasswordString(""));
 		defaultSettings.put(PROPERTY_CLASSIC, Boolean.FALSE);
