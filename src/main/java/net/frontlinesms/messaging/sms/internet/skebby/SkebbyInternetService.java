@@ -10,12 +10,12 @@ import com.skebby.gateways.SendSmsResponse;
 import com.skebby.gateways.SkebbyResult;
 
 import net.frontlinesms.FrontlineUtils;
-import net.frontlinesms.data.StructuredProperties;
 import net.frontlinesms.data.domain.FrontlineMessage;
 import net.frontlinesms.data.domain.FrontlineMessage.Status;
-import net.frontlinesms.messaging.Provider;
 import net.frontlinesms.messaging.sms.internet.*;
-import net.frontlinesms.messaging.sms.properties.PasswordString;
+import net.frontlinesms.serviceconfig.PasswordString;
+import net.frontlinesms.serviceconfig.ConfigurableServiceProperties;
+import net.frontlinesms.serviceconfig.StructuredProperties;
 import net.frontlinesms.ui.handler.settings.SmsInternetServiceSettingsHandler;
 
 /**
@@ -23,7 +23,7 @@ import net.frontlinesms.ui.handler.settings.SmsInternetServiceSettingsHandler;
  * 
  * @author Giancarlo Frison <giancarlo@gfrison.com>
  */
-@Provider(name = "Skebby (beta)", icon = "/icons/smsdevice/internet/servizio_skebby.png")
+@ConfigurableServiceProperties(name = "Skebby (beta)", icon = "/icons/smsdevice/internet/servizio_skebby.png")
 public class SkebbyInternetService extends AbstractSmsInternetService {
 
 	
