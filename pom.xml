@@ -28,7 +28,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>net.frontlinesms.core</groupId>
-			<artifactId>frontlinesms</artifactId>
+			<artifactId>frontlinesms-core</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
